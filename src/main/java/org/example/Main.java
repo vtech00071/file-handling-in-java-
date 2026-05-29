@@ -9,6 +9,7 @@ import java.util.HashMap;
 
 public class Main {
     static Scanner scanner = new Scanner(System.in);
+    static HashMap<String, StringBuilder> storedFiles = new HashMap<>();
 
 
     static void main() {
@@ -35,7 +36,7 @@ public class Main {
                 FileReader file = new FileReader(directory);
                 BufferedReader configFile = new BufferedReader(file);
         ) {
-            HashMap<String, StringBuilder> storedFiles = new HashMap<>();
+
             String reader;
             StringBuilder thewords = new StringBuilder();
             while ((reader = configFile.readLine()) != null) {
